@@ -1,5 +1,7 @@
 import io.vertx.core.AbstractVerticle;
-public class VerticeXServer extends AbstractVerticle {
+
+public class VerticeXServer extends AbstractVerticle 
+{
   public void start() {
     vertx.createHttpServer().requestHandler(req -> {
       req.response()
